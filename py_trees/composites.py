@@ -731,14 +731,11 @@ class Parallel(Composite):
                     new_status = common.Status.SUCCESS
                     self.current_child = self.children[-1]
             elif type(self.policy) is common.ParallelPolicy.SuccessOnOne:
-                successful = [
-                    child
-                    for child in self.children
-                    if child.status == common.Status.SUCCESS
-                ]
-                if successful:
-                    new_status = common.Status.SUCCESS
-                    self.current_child = successful[-1]
+                for child in reversed(self.children):
+                    if child.status == common.Status.SUCCESS:
+                        new_status = common.Status.SUCCESS
+                        self.current_child = child
+                        break
             elif type(self.policy) is common.ParallelPolicy.SuccessOnSelected:
                 if all(
                     [c.status == common.Status.SUCCESS for c in self.policy.children]
