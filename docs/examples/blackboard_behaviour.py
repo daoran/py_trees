@@ -41,9 +41,14 @@ class Foo(py_trees.behaviour.Behaviour):
 
 # could equivalently do directly via the Blackboard static methods if
 # not interested in tracking / visualising the application configuration
-configuration = py_trees.blackboard.Client(name="App Config")
-configuration.register_key("foo_parameters_init", access=py_trees.common.Access.WRITE)
-configuration.foo_parameters_init = 3
+# Register and set up the configuration on the blackboard
+configuration = py_trees.blackboard.Client(
+    name="App Config", namespace="foo_parameters_"
+)  # Added namespace
+configuration.register_key(
+    "init", access=py_trees.common.Access.WRITE
+)  # Register key with correct namespace
+configuration.init = 3  # Set the initial value for 'foo_parameters_init'
 
 foo = Foo(name="The Foo")
 for i in range(1, 8):
