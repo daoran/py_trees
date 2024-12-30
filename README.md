@@ -39,24 +39,24 @@ You can get started on CodeSpaces (with no mismatched environment issues and in 
 
 # Explore the demos
 (docker) zen@py_trees:/workspaces/py_trees$ poetry shell
-(py-trees-py3.8) (docker) zen@py_trees:/workspaces/py_trees$ py-trees-demo-<tab>-<tab>
+(py-trees-py3.10) (docker) zen@py_trees:/workspaces/py_trees$ py-trees-demo-<tab>-<tab>
 py-trees-demo-action-behaviour            py-trees-demo-context-switching           py-trees-demo-logging
 py-trees-demo-behaviour-lifecycle         py-trees-demo-display-modes               py-trees-demo-pick-up-where-you-left-off
 py-trees-demo-blackboard                  py-trees-demo-dot-graphs                  py-trees-demo-selector
 py-trees-demo-blackboard-namespaces       py-trees-demo-either-or                   py-trees-demo-sequence
 py-trees-demo-blackboard-remappings       py-trees-demo-eternal-guard               py-trees-demo-tree-stewardship
-(py-trees-py3.8) (docker) zen@py_trees:/workspaces/py_trees$ py-trees-demo-blackboard
+(py-trees-py3.10) (docker) zen@py_trees:/workspaces/py_trees$ py-trees-demo-blackboard
 ...
-(py-trees-py3.8) (docker) zen@py_trees:/workspaces/py_trees$ exit
+(py-trees-py3.10) (docker) zen@py_trees:/workspaces/py_trees$ exit
 
 # Hack some Code
 
 # Run the Formatter, Tests, Linters and Mypy
 (docker) zen@py_trees:/workspaces/py_trees$ poetry run tox -l
-py38 py310 format check mypy38 mypy310
+py310 py312 format check mypy310 mypy312
 (docker) zen@py_trees:/workspaces/py_trees$ poetry run tox -e format
 ...
-(docker) zen@py_trees:/workspaces/py_trees$ poetry run tox -e py38
+(docker) zen@py_trees:/workspaces/py_trees$ poetry run tox -e py310
 ...
 (docker) zen@py_trees:/workspaces/py_trees$ poetry run tox -e check
 ...
