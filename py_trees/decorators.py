@@ -433,7 +433,7 @@ class EternalGuard(Decorator):
         result = self.condition()
         if isinstance(result, common.Status):
             result = False if result == common.Status.FAILURE else True
-        elif isinstance(result, bool):
+        elif not isinstance(result, bool):
             error_message = (
                 "conditional check must return 'bool' or 'common.Status' [{}]".format(
                     type(result)
