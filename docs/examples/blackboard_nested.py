@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
+"""Example showing how to use objects to create nested blackboard keys."""
 
 import py_trees
 
 
 class Nested(object):
+    """Simple object that contains a few attributes."""
+
     def __init__(self):
         self.foo = None
         self.bar = None

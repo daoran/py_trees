@@ -15,7 +15,7 @@ $ poetry run tox -e format
 $ poetry run tox -e check
 
 # Type-Check
-$ poetry run mypy310
+$ poetry run tox -e mypy310
 
 # Tests
 $ poetry run tox -e py310

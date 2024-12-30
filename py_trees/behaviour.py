@@ -79,9 +79,9 @@ class Behaviour(abc.ABC):
         )  # convenience
         self.status = common.Status.INVALID
         self.iterator = self.tick()
-        self.parent: typing.Optional[Behaviour] = (
-            None  # will get set if a behaviour is added to a composite
-        )
+        self.parent: typing.Optional[
+            Behaviour
+        ] = None  # will get set if a behaviour is added to a composite
         self.children: typing.List[Behaviour] = []  # only set by composite behaviours
         self.logger = logging.Logger(name)
         self.feedback_message = ""  # useful for debugging, or human readable updates, but not necessary to implement

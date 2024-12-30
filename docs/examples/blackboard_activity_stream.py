@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Example showing how to display the blackboard activity stream."""
 
 import py_trees
 

@@ -1,17 +1,21 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+"""Example showing how to create a skeleton behaviour."""
+
+import random
 
 import py_trees
-import random
 
 
 class Foo(py_trees.behaviour.Behaviour):
+    """A skeleton behaviour that inherits from the PyTrees Behaviour class."""
+
     def __init__(self, name):
         """
-        Minimal one-time initialisation. A good rule of thumb is
-        to only include the initialisation relevant for being able
-        to insert this behaviour in a tree for offline rendering to
-        dot graphs.
+        Minimal one-time initialisation.
+
+        A good rule of thumb is to only include the initialisation relevant
+        for being able to insert this behaviour in a tree for offline rendering to dot graphs.
 
         Other one-time initialisation requirements should be met via
         the setup() method.
@@ -20,6 +24,8 @@ class Foo(py_trees.behaviour.Behaviour):
 
     def setup(self):
         """
+        Minimal setup implementation.
+
         When is this called?
           This function should be either manually called by your program
           to setup this behaviour alone, or more commonly, via
@@ -50,6 +56,8 @@ class Foo(py_trees.behaviour.Behaviour):
 
     def initialise(self):
         """
+        Minimal initialisation implementation.
+
         When is this called?
           The first time your behaviour is ticked and anytime the
           status is not RUNNING thereafter.
@@ -62,6 +70,8 @@ class Foo(py_trees.behaviour.Behaviour):
 
     def update(self):
         """
+        Minimal update implementation.
+
         When is this called?
           Every time your behaviour is ticked.
 
@@ -84,9 +94,14 @@ class Foo(py_trees.behaviour.Behaviour):
 
     def terminate(self, new_status):
         """
+        Minimal termination implementation.
+
         When is this called?
            Whenever your behaviour switches to a non-running state.
             - SUCCESS || FAILURE : your behaviour's work cycle has finished
             - INVALID : a higher priority branch has interrupted, or shutting down
         """
-        self.logger.debug("  %s [Foo::terminate().terminate()][%s->%s]" % (self.name, self.status, new_status))
+        self.logger.debug(
+            "  %s [Foo::terminate().terminate()][%s->%s]"
+            % (self.name, self.status, new_status)
+        )
