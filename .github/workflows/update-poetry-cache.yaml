@@ -23,7 +23,7 @@ jobs:
         python-version: ["3.10", "3.12"]
         include:
           - python-version: "3.10"
-            python-py-version: "py10"
+            python-py-version: "py310"
           - python-version: "3.12"
             python-py-version: "py312"
     container:
