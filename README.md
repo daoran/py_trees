@@ -97,7 +97,7 @@ Robotics:
 | | Devel | 2.2.x | 2.1.x | 2.0.x | 1.2.x | 0.7.x | 0.6.x |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | Sources | [![devel][sources-devel-image]][sources-devel] | [![2.1.x][sources-2.2.x-image]][sources-2.2.x] | [![2.1.x][sources-2.1.x-image]][sources-2.1.x] | [![2.0.x][sources-2.0.x-image]][sources-2.0.x] | [![1.2.x][sources-1.2.x-image]][sources-1.2.x] | [![0.7.x][sources-0.7.x-image]][sources-0.7.x] | [![0.6.x][sources-0.6.x-image]][sources-0.6.x]
-| Compatibility | [![Python 3.10][python310-image]][python310-docs] [![Python 3.8][python38-image]][python38-docs] | [![Python 3.10][python310-image]][python310-docs] [![Python 3.8][python38-image]][python38-docs] | [![Python 3.6][python36-image]][python36-docs] | [![Python 3.6][python36-image]][python36-docs] | [![Python 3.6][python36-image]][python36-docs] | [![Python 3.6][python36-image]][python36-docs] | [![Python 2.7][python27-image]][python27-docs]
+| Compatibility | [![Python 3.12][python312-image]][python312-docs] [![Python 3.10][python310-image]][python310-docs] | [![Python 3.10][python310-image]][python310-docs] [![Python 3.8][python38-image]][python38-docs] | [![Python 3.6][python36-image]][python36-docs] | [![Python 3.6][python36-image]][python36-docs] | [![Python 3.6][python36-image]][python36-docs] | [![Python 3.6][python36-image]][python36-docs] | [![Python 2.7][python27-image]][python27-docs]
 | CI | [![devel-Status][devel-build-status-image]][devel-build-status] | [![2.2.x-Status][2.2.x-build-status-image]][2.2.x-build-status] | - | - | - | - | - | 
 | Documentation | [![devel-Docs][rtd-devel-image]][docs-devel] | [![2.2.x-Docs][rtd-2.2.x-image]][docs-2.2.x] | [![2.1.x-Docs][rtd-2.1.x-image]][docs-2.1.x] | [![2.0.x-Docs][rtd-2.0.x-image]][docs-2.0.x] | [![1.2.x-Docs][rtd-1.2.x-image]][docs-1.2.x] | [![0.7.x-Docs][rtd-0.7.x-image]][docs-0.7.x] | [![0.6.x-Docs][rtd-0.6.x-image]][docs-0.6.x]
 
@@ -105,6 +105,8 @@ Robotics:
 [license-image]: https://img.shields.io/badge/License-BSD%203--Clause-orange.svg?style=plastic
 [license]: LICENSE
 
+[python312-image]: https://img.shields.io/badge/python-3.12-green.svg?style=plastic
+[python312-docs]: https://docs.python.org/3.12/
 [python310-image]: https://img.shields.io/badge/python-3.10-green.svg?style=plastic
 [python310-docs]: https://docs.python.org/3.10/
 [python38-image]: https://img.shields.io/badge/python-3.8-green.svg?style=plastic
